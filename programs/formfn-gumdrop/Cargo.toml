@@ -1,0 +1,24 @@
+[package]
+name = "formfn-gumdrop"
+version = "0.0.1"
+description = "Port of the Metaplex Gumdrop Program which airdrops NFTs according to a Merkle root."
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "formfn_gumdrop"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { version = "0.26.0", features = [ "init-if-needed" ] }
+anchor-spl = "0.26.0"
+mpl-token-metadata = { version="1.7.0", features = [ "no-entrypoint" ] }
+solana-program = "1.14.0"
+solana-security-txt = "1.0.2"
+spl-associated-token-account = { version = "1.1.2", features = [ "no-entrypoint" ] }

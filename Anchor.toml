@@ -1,0 +1,27 @@
+[features]
+seeds = false
+
+[programs.localnet]
+formfn_gumdrop = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+
+[programs.devnet]
+formfn_gumdrop = "dgumN6t8fDjoHAbb1K4ySqcP2sWJHaqX9JLNQMDPT9U"
+
+[programs.testnet]
+formfn_gumdrop = "dgumN6t8fDjoHAbb1K4ySqcP2sWJHaqX9JLNQMDPT9U"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[[test.genesis]]
+address = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
+program = "artifacts/mpl_token_metadata.so"
+
+[provider]
+cluster = "localnet"
+wallet = "keys/localnet.json"
+
+[scripts]
+test = "yarn test-program"
+set-config = "yarn set-config-authority"
+update-config = "yarn update-config-authority"
