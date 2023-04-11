@@ -21,7 +21,7 @@ jobs:
           echo "@bullistic-hq:registry=https://npm.pkg.github.com" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.PACKAGE_PUBLISH_TOKEN }}" >> .npmrc
       - run: yarn install
-      - run: yarn run build
+      - run: yarn run build-sdk
       - run: |
           git config --global user.email "bullisticxyz@gmail.com"
           git config --global user.name "Bullistic"
