@@ -1,4 +1,4 @@
-import { getEditionNumber } from "@formfunction-hq/formfunction-program-shared";
+import { getEditionNumber } from "@bullistic-hq/bullistic-program-shared";
 import { Keypair, PublicKey } from "@solana/web3.js";
 import assertMasterEditionSupply from "tests/helpers/assertMasterEditionSupply";
 import getClaimantsListForTest from "tests/helpers/getClaimantsListForTest";

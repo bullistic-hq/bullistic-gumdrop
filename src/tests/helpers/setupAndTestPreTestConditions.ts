@@ -1,4 +1,4 @@
-import { mintMasterEditionForTest } from "@formfunction-hq/formfunction-program-shared";
+import { mintMasterEditionForTest } from "@bullistic-hq/bullistic-program-shared";
 import getConnectionAndSdk from "sdk/utils/getConnectionAndSdk";
 import getClaimantsListForTest from "tests/helpers/getClaimantsListForTest";
 import getTestWallets from "tests/helpers/getTestWallets";

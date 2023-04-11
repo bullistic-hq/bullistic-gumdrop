@@ -1,4 +1,4 @@
-import { MerkleProof } from "@formfunction-hq/formfunction-program-shared";
+import { MerkleProof } from "@bullistic-hq/bullistic-program-shared";
 import { Keypair } from "@solana/web3.js";
 import ClaimantWithProof from "sdk/types/ClaimantWithProof";
 

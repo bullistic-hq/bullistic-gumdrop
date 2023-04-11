@@ -2,13 +2,13 @@
 seeds = false
 
 [programs.localnet]
-formfn_gumdrop = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+bullistic_gumdrop = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
 
 [programs.devnet]
-formfn_gumdrop = "dgumN6t8fDjoHAbb1K4ySqcP2sWJHaqX9JLNQMDPT9U"
+bullistic_gumdrop = "dgumN6t8fDjoHAbb1K4ySqcP2sWJHaqX9JLNQMDPT9U"
 
 [programs.testnet]
-formfn_gumdrop = "dgumN6t8fDjoHAbb1K4ySqcP2sWJHaqX9JLNQMDPT9U"
+bullistic_gumdrop = "dgumN6t8fDjoHAbb1K4ySqcP2sWJHaqX9JLNQMDPT9U"
 
 [registry]
 url = "https://anchor.projectserum.com"

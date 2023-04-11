@@ -1,8 +1,8 @@
-import modifyProgramIdlScript from "@formfunction-hq/formfunction-program-shared/dist/scripts/modifyProgramIdlScript";
+import modifyProgramIdlScript from "@bullistic-hq/bullistic-program-shared/dist/scripts/modifyProgramIdlScript";
 
 modifyProgramIdlScript({
   decodedTransactionResultTypeFilePath:
-    "src/sdk/types/DecodedFormfnGumdropTransactionResult.ts",
-  idlFilePath: "src/sdk/idl/FormfnGumdrop.ts",
-  programName: "FormfnGumdrop",
+    "src/sdk/types/DecodedBullisticGumdropTransactionResult.ts",
+  idlFilePath: "src/sdk/idl/BullisticGumdrop.ts",
+  programName: "BullisticGumdrop",
 });

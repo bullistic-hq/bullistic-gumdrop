@@ -1,4 +1,4 @@
-import { requestAirdrops } from "@formfunction-hq/formfunction-program-shared";
+import { requestAirdrops } from "@bullistic-hq/bullistic-program-shared";
 import { Keypair } from "@solana/web3.js";
 import logIfNotProd from "sdk/utils/logIfNotProd";
 import getClaimantsListForTest from "tests/helpers/getClaimantsListForTest";

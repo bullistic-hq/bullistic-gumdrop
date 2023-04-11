@@ -1,4 +1,4 @@
-import { getEmptyRoot } from "@formfunction-hq/formfunction-program-shared";
+import { getEmptyRoot } from "@bullistic-hq/bullistic-program-shared";
 import setupAndTestPreTestConditions from "tests/helpers/setupAndTestPreTestConditions";
 
 describe("NewDistributor with empty claimants list", () => {

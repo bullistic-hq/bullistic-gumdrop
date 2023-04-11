@@ -1,7 +1,7 @@
 import { Program } from "@project-serum/anchor";
-import { FormfnGumdrop } from "sdk/idl/FormfnGumdrop";
-import FORMFN_GUMDROP_IDL from "sdk/idl/idl";
+import { BullisticGumdrop } from "sdk/idl/BullisticGumdrop";
+import BULLISTIC_GUMDROP_IDL from "sdk/idl/idl";
 
-export { FORMFN_GUMDROP_IDL };
+export { BULLISTIC_GUMDROP_IDL };
 
-export type GumdropProgram = Program<FormfnGumdrop>;
+export type GumdropProgram = Program<BullisticGumdrop>;

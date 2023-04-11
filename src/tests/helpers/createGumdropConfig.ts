@@ -1,10 +1,10 @@
 import { Connection, Keypair } from "@solana/web3.js";
-import FormfnGumdropSdk from "sdk/FormfnGumdropSdk";
+import BullisticGumdropSdk from "sdk/BullisticGumdropSdk";
 import logIfNotProd from "sdk/utils/logIfNotProd";
 import sendTransactionForTest from "tests/utils/sendTransactionForTest";
 
 export default async function createGumdropConfig(
-  gumdropSdk: FormfnGumdropSdk,
+  gumdropSdk: BullisticGumdropSdk,
   connection: Connection,
   configAuthority: Keypair
 ) {

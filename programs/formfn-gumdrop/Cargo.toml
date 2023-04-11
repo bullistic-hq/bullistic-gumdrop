@@ -1,12 +1,12 @@
 [package]
-name = "formfn-gumdrop"
+name = "bullistic-gumdrop"
 version = "0.0.1"
 description = "Port of the Metaplex Gumdrop Program which airdrops NFTs according to a Merkle root."
 edition = "2018"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "formfn_gumdrop"
+name = "bullistic_gumdrop"
 
 [features]
 no-entrypoint = []

@@ -1,4 +1,4 @@
-import { Environment } from "@formfunction-hq/formfunction-program-shared";
+import { Environment } from "@bullistic-hq/bullistic-program-shared";
 
 export default function getEnvironmentFromAnchorUrl() {
   const url = process.env.ANCHOR_PROVIDER_URL;

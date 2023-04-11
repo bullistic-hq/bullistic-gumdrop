@@ -2,7 +2,7 @@ import {
   deserializeMerkleProof,
   MerkleProof,
   serializeMerkleProof,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { Keypair } from "@solana/web3.js";
 import constructMerkleTree from "sdk/merkle-tree/constructMerkleTree";
 import getClaimantsListForTest from "tests/helpers/getClaimantsListForTest";

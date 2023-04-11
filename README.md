@@ -1,7 +1,7 @@
 ![](banner.jpeg)
 
 <div align="center">
-  <h1>Formfunction Gumdrop</h1>
+  <h1>Bullistic Gumdrop</h1>
   <a href="#overview">Overview</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
   <a href="#repo-structure">Repo Structure</a>
@@ -20,7 +20,7 @@
 
 ## Overview
 
-The Formfunction Gumdrop is a port of the [Metaplex Gumdrop Program](https://docs.metaplex.com/airdrops/create-gumdrop) which uses merkle trees to support efficient airdrops of tokens and NFTs. The Formfunction Gumdrop is designed specifically to facilitate airdropping participation NFTs (pNFTs) from creators to auction participants.
+The Bullistic Gumdrop is a port of the [Metaplex Gumdrop Program](https://docs.metaplex.com/airdrops/create-gumdrop) which uses merkle trees to support efficient airdrops of tokens and NFTs. The Bullistic Gumdrop is designed specifically to facilitate airdropping participation NFTs (pNFTs) from creators to auction participants.
 
 - Mainnet address: `gum8aDxTHP5HSXxQzVHDdSQJGUQFLreGDX2cUa133tk`
 - Devnet address: `dgumN6t8fDjoHAbb1K4ySqcP2sWJHaqX9JLNQMDPT9U`
@@ -147,7 +147,7 @@ To deploy the program from scratch to a new program address, do the following:
 - Update `programIds` with the new addresses.
 - Update the address in `keys/README`.
 - Run the above deploy steps.
-- If you updated the gumdrop config authority address, update the appropriate environment variable in the Formfunction server deployments (local and in GitHub Secrets).
+- If you updated the gumdrop config authority address, update the appropriate environment variable in the Bullistic server deployments (local and in GitHub Secrets).
 
 ### Mainnet Deployment
 
@@ -189,7 +189,7 @@ Follow the following steps to publish a new version of the TypeScript SDK:
 2. Run `git push origin NEW_TAG`.
 3. `git push` the new commit as well.
 
-This will push the new release tag to GitHub and trigger the release pipeline, after which clients can install the latest SDK with `yarn add @formfunction-hq/formfunction-gumdrop@latest`.
+This will push the new release tag to GitHub and trigger the release pipeline, after which clients can install the latest SDK with `yarn add @bullistic-hq/bullistic-gumdrop@latest`.
 
 ## Useful Links
 

@@ -1,10 +1,10 @@
 import { Idl } from "@project-serum/anchor";
 
-const FORMFN_GUMDROP_IDL: Idl = {
+const BULLISTIC_GUMDROP_IDL: Idl = {
   accounts: [
     {
       docs: [
-        "Global Gumdrop program authority account. This is for Formfunction to",
+        "Global Gumdrop program authority account. This is for Bullistic to",
         "authorize certain program instructions.",
       ],
       name: "GumdropConfig",
@@ -89,7 +89,7 @@ const FORMFN_GUMDROP_IDL: Idl = {
       },
     },
   ],
-  docs: ["The [formfn_gumdrop] program."],
+  docs: ["The [bullistic_gumdrop] program."],
   errors: [
     {
       code: 7000,
@@ -163,7 +163,7 @@ const FORMFN_GUMDROP_IDL: Idl = {
           type: "u8",
         },
       ],
-      docs: ["Set the global formfn_authority on the GumdropConfig account."],
+      docs: ["Set the global bullistic_authority on the GumdropConfig account."],
       name: "createGumdropConfig",
     },
     {
@@ -192,7 +192,7 @@ const FORMFN_GUMDROP_IDL: Idl = {
       ],
       args: [],
       docs: [
-        "Update the global formfn_authority on the GumdropConfig account.",
+        "Update the global bullistic_authority on the GumdropConfig account.",
       ],
       name: "updateGumdropConfig",
     },
@@ -561,8 +561,8 @@ const FORMFN_GUMDROP_IDL: Idl = {
       name: "claimEdition",
     },
   ],
-  name: "formfn_gumdrop",
+  name: "bullistic_gumdrop",
   version: "0.0.1",
 };
 
-export default FORMFN_GUMDROP_IDL;
+export default BULLISTIC_GUMDROP_IDL;

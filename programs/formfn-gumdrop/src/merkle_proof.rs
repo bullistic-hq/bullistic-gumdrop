@@ -7,7 +7,7 @@
 //! https://github.com/saber-hq/merkle-distributor/blob/master/programs/merkle-distributor/src/merkle_proof.rs
 //!
 //! The Saber code was then used directly in the Metaplex Gumdrop implementation
-//! which served as the basis for the current formfn-gumdrop program.
+//! which served as the basis for the current bullistic-gumdrop program.
 
 /// Returns true if a `leaf` can be proved to be a part of a Merkle tree
 /// defined by `root`. For this, a `proof` must be provided, containing

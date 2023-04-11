@@ -4,13 +4,13 @@
 import {
   DecodedInstructionAccount,
   GenericDecodedTransaction,
-} from "@formfunction-hq/formfunction-program-shared";
-import { IDL as FORMFN_GUMDROP_IDL } from "sdk/idl/FormfnGumdrop";
-import FormfnGumdropInstructionName from "sdk/types/FormfnGumdropInstructionName";
+} from "@bullistic-hq/bullistic-program-shared";
+import { IDL as BULLISTIC_GUMDROP_IDL } from "sdk/idl/BullisticGumdrop";
+import BullisticGumdropInstructionName from "sdk/types/BullisticGumdropInstructionName";
 
 const identity = <T>(val: T): T => val;
 
-const ixMap = FORMFN_GUMDROP_IDL.instructionsMap ?? {};
+const ixMap = BULLISTIC_GUMDROP_IDL.instructionsMap ?? {};
 
 const ClaimEditionAccounts = (ixMap.claimEdition ?? []).map(identity);
 
@@ -32,42 +32,42 @@ const UpdateGumdropConfigAccounts = (ixMap.updateGumdropConfig ?? []).map(
   identity
 );
 
-type DecodedFormfnGumdropTransactionResult = {
-  claimEdition?: GenericDecodedTransaction<FormfnGumdropInstructionName> & {
+type DecodedBullisticGumdropTransactionResult = {
+  claimEdition?: GenericDecodedTransaction<BullisticGumdropInstructionName> & {
     accountsMap: {
       [Key in typeof ClaimEditionAccounts[0]]: DecodedInstructionAccount;
     };
   };
-  closeDistributor?: GenericDecodedTransaction<FormfnGumdropInstructionName> & {
+  closeDistributor?: GenericDecodedTransaction<BullisticGumdropInstructionName> & {
     accountsMap: {
       [Key in typeof CloseDistributorAccounts[0]]: DecodedInstructionAccount;
     };
   };
-  closeDistributorTokenAccount?: GenericDecodedTransaction<FormfnGumdropInstructionName> & {
+  closeDistributorTokenAccount?: GenericDecodedTransaction<BullisticGumdropInstructionName> & {
     accountsMap: {
       [Key in typeof CloseDistributorTokenAccountAccounts[0]]: DecodedInstructionAccount;
     };
   };
-  createGumdropConfig?: GenericDecodedTransaction<FormfnGumdropInstructionName> & {
+  createGumdropConfig?: GenericDecodedTransaction<BullisticGumdropInstructionName> & {
     accountsMap: {
       [Key in typeof CreateGumdropConfigAccounts[0]]: DecodedInstructionAccount;
     };
   };
-  newDistributor?: GenericDecodedTransaction<FormfnGumdropInstructionName> & {
+  newDistributor?: GenericDecodedTransaction<BullisticGumdropInstructionName> & {
     accountsMap: {
       [Key in typeof NewDistributorAccounts[0]]: DecodedInstructionAccount;
     };
   };
-  updateDistributor?: GenericDecodedTransaction<FormfnGumdropInstructionName> & {
+  updateDistributor?: GenericDecodedTransaction<BullisticGumdropInstructionName> & {
     accountsMap: {
       [Key in typeof UpdateDistributorAccounts[0]]: DecodedInstructionAccount;
     };
   };
-  updateGumdropConfig?: GenericDecodedTransaction<FormfnGumdropInstructionName> & {
+  updateGumdropConfig?: GenericDecodedTransaction<BullisticGumdropInstructionName> & {
     accountsMap: {
       [Key in typeof UpdateGumdropConfigAccounts[0]]: DecodedInstructionAccount;
     };
   };
 };
 
-export default DecodedFormfnGumdropTransactionResult;
+export default DecodedBullisticGumdropTransactionResult;

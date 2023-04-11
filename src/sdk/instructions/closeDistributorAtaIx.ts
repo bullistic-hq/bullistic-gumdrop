@@ -1,4 +1,4 @@
-import { findAtaPda } from "@formfunction-hq/formfunction-program-shared";
+import { findAtaPda } from "@bullistic-hq/bullistic-program-shared";
 import { TOKEN_PROGRAM_ID } from "@solana/spl-token";
 import { PublicKey, TransactionInstruction } from "@solana/web3.js";
 import { GumdropProgram } from "sdk/idl";

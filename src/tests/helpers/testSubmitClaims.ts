@@ -5,9 +5,9 @@ import {
   getLimitedEdition,
   getMasterEditionSupply,
   range,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { Connection, PublicKey } from "@solana/web3.js";
-import FormfnGumdropSdk from "sdk/FormfnGumdropSdk";
+import BullisticGumdropSdk from "sdk/BullisticGumdropSdk";
 import logIfNotProd from "sdk/utils/logIfNotProd";
 import assertMasterEditionSupply from "tests/helpers/assertMasterEditionSupply";
 import assertTokenOwnerHasAmount from "tests/helpers/assertTokenOwnerHasAmount";
@@ -22,7 +22,7 @@ import assertPublicKeysEqual from "tests/utils/assertPublicKeysEqual";
  * fail.
  */
 export default async function testSubmitClaims(
-  gumdropSdk: FormfnGumdropSdk,
+  gumdropSdk: BullisticGumdropSdk,
   connection: Connection,
   limitedEditionUpdateAuthority: PublicKey,
   claimants: Array<ClaimantInfoForTest>,

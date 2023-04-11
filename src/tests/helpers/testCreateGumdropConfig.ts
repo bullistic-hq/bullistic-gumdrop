@@ -1,5 +1,5 @@
 import { Connection, Keypair } from "@solana/web3.js";
-import FormfnGumdropSdk from "sdk/FormfnGumdropSdk";
+import BullisticGumdropSdk from "sdk/BullisticGumdropSdk";
 import findGumdropConfigPda from "sdk/pdas/findGumdropConfigPda";
 import logIfNotProd from "sdk/utils/logIfNotProd";
 import createGumdropConfig from "tests/helpers/createGumdropConfig";
@@ -7,7 +7,7 @@ import assertPublicKeysEqual from "tests/utils/assertPublicKeysEqual";
 import expectToThrow from "tests/utils/expectToThrow";
 
 export default async function testCreateGumdropConfig(
-  gumdropSdk: FormfnGumdropSdk,
+  gumdropSdk: BullisticGumdropSdk,
   connection: Connection,
   configAuthority: Keypair
 ) {

@@ -1,5 +1,5 @@
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
-import FormfnGumdropSdk from "sdk/FormfnGumdropSdk";
+import BullisticGumdropSdk from "sdk/BullisticGumdropSdk";
 import logIfNotProd from "sdk/utils/logIfNotProd";
 import sendTransactionForTest from "tests/utils/sendTransactionForTest";
 
@@ -12,7 +12,7 @@ type Accounts = {
 
 type Args = {
   connection: Connection;
-  gumdropSdk: FormfnGumdropSdk;
+  gumdropSdk: BullisticGumdropSdk;
   shouldConfigAuthorityClose?: boolean;
 };
 

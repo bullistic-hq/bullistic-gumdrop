@@ -1,4 +1,4 @@
-import { findAtaPda } from "@formfunction-hq/formfunction-program-shared";
+import { findAtaPda } from "@bullistic-hq/bullistic-program-shared";
 import { Connection, ParsedAccountData, PublicKey } from "@solana/web3.js";
 import logIfNotProd from "sdk/utils/logIfNotProd";
 

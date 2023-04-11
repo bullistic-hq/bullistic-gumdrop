@@ -1,11 +1,11 @@
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
-import FormfnGumdropSdk from "sdk/FormfnGumdropSdk";
+import BullisticGumdropSdk from "sdk/BullisticGumdropSdk";
 import ClaimantInfo from "sdk/types/ClaimantInfo";
 import logIfNotProd from "sdk/utils/logIfNotProd";
 import sendTransactionForTest from "tests/utils/sendTransactionForTest";
 
 export default async function createNewDistributor(
-  gumdropSdk: FormfnGumdropSdk,
+  gumdropSdk: BullisticGumdropSdk,
   connection: Connection,
   mint: PublicKey,
   wallet: Keypair,

@@ -1,6 +1,6 @@
-import { getEditionNumber } from "@formfunction-hq/formfunction-program-shared";
+import { getEditionNumber } from "@bullistic-hq/bullistic-program-shared";
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
-import FormfnGumdropSdk from "sdk/FormfnGumdropSdk";
+import BullisticGumdropSdk from "sdk/BullisticGumdropSdk";
 import findDistributorPda from "sdk/pdas/findDistributorPda";
 import ClaimantInfo from "sdk/types/ClaimantInfo";
 import logIfNotProd from "sdk/utils/logIfNotProd";
@@ -20,7 +20,7 @@ type Args = {
   connection: Connection;
   expectedEdition?: number;
   expectedMasterEditionSupply?: number;
-  gumdropSdk: FormfnGumdropSdk;
+  gumdropSdk: BullisticGumdropSdk;
 };
 
 export default async function testNewDistributor(

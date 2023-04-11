@@ -1,4 +1,4 @@
-import { getEditionNumber } from "@formfunction-hq/formfunction-program-shared";
+import { getEditionNumber } from "@bullistic-hq/bullistic-program-shared";
 import logIfNotProd from "sdk/utils/logIfNotProd";
 import assertMerkleRootsNotEqual from "tests/helpers/assertMerkleRootsNotEqual";
 import getClaimantsListForTest from "tests/helpers/getClaimantsListForTest";

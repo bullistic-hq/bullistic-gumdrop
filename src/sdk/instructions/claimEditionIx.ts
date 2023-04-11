@@ -5,7 +5,7 @@ import {
   findEditionPda,
   TOKEN_METADATA_PROGRAM_ID,
   treeNodeToArray,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { BN } from "@project-serum/anchor";
 import { TOKEN_PROGRAM_ID } from "@solana/spl-token";
 import {

@@ -1,4 +1,4 @@
-import { Environment } from "@formfunction-hq/formfunction-program-shared";
+import { Environment } from "@bullistic-hq/bullistic-program-shared";
 import { sendAndConfirmTransaction } from "@solana/web3.js";
 import getConfigAuthorityKeypair from "scripts/getConfigAuthorityKeypair";
 import getUpdateConfigAuthorityKeypair from "scripts/getUpdateConfigAuthorityKeypair";

@@ -33,7 +33,7 @@ fi
 echo -e "\nDeploying program ID $DEPLOY_PROGRAM_ID to Solana $ENVIRONMENT.\n"
 
 # Swap program id in lib.rs to devnet program ID
-sed -i '' "s/$MAINNET_PROGRAM_ID/$DEPLOY_PROGRAM_ID/" programs/formfn-gumdrop/src/lib.rs
+sed -i '' "s/$MAINNET_PROGRAM_ID/$DEPLOY_PROGRAM_ID/" programs/bullistic-gumdrop/src/lib.rs
 
 echo -e "All checks passed! Building program...\n"
 # Build devnet program
@@ -44,13 +44,13 @@ echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   # Deploy program to devnet or testnet
-  printf "Calling solana program deploy target/deploy/formfn_gumdrop.so -u $ENVIRONMENT -k ./keys/$ENVIRONMENT/deployer-keypair.json --program-id ./keys/$ENVIRONMENT/program-keypair.json\n"
+  printf "Calling solana program deploy target/deploy/bullistic_gumdrop.so -u $ENVIRONMENT -k ./keys/$ENVIRONMENT/deployer-keypair.json --program-id ./keys/$ENVIRONMENT/program-keypair.json\n"
   printf "This will take a moment...\n"
-  solana program deploy ./target/deploy/formfn_gumdrop.so -u $ENVIRONMENT -k ./keys/$ENVIRONMENT/deployer-keypair.json --program-id ./keys/$ENVIRONMENT/program-keypair.json
+  solana program deploy ./target/deploy/bullistic_gumdrop.so -u $ENVIRONMENT -k ./keys/$ENVIRONMENT/deployer-keypair.json --program-id ./keys/$ENVIRONMENT/program-keypair.json
 fi
 
 # Swap program id back
-sed -i '' "s/$DEPLOY_PROGRAM_ID/$MAINNET_PROGRAM_ID/" programs/formfn-gumdrop/src/lib.rs
+sed -i '' "s/$DEPLOY_PROGRAM_ID/$MAINNET_PROGRAM_ID/" programs/bullistic-gumdrop/src/lib.rs
 
 # Restore Anchor.toml
 cp scripts/anchor-configs/Anchor-local.toml Anchor.toml

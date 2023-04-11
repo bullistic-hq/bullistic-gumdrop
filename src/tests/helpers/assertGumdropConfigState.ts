@@ -1,10 +1,10 @@
 import { PublicKey } from "@solana/web3.js";
-import FormfnGumdropSdk from "sdk/FormfnGumdropSdk";
+import BullisticGumdropSdk from "sdk/BullisticGumdropSdk";
 import findGumdropConfigPda from "sdk/pdas/findGumdropConfigPda";
 import assertPublicKeysEqual from "tests/utils/assertPublicKeysEqual";
 
 export default async function assertGumdropConfigState(
-  gumdropSdk: FormfnGumdropSdk,
+  gumdropSdk: BullisticGumdropSdk,
   creator: PublicKey,
   authority: PublicKey
 ) {

@@ -1,10 +1,10 @@
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
-import FormfnGumdropSdk from "sdk/FormfnGumdropSdk";
+import BullisticGumdropSdk from "sdk/BullisticGumdropSdk";
 import { ClaimantInfoForTest } from "tests/types/ClaimantInfoForTest";
 import sendTransactionForTest from "tests/utils/sendTransactionForTest";
 
 export default async function submitClaimEditionTransaction(
-  gumdropSdk: FormfnGumdropSdk,
+  gumdropSdk: BullisticGumdropSdk,
   connection: Connection,
   limitedEditionUpdateAuthority: PublicKey,
   claimant: ClaimantInfoForTest,

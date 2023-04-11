@@ -1,7 +1,7 @@
 import {
   randomNumberInRange,
   serializeMerkleProof,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { Keypair, PublicKey } from "@solana/web3.js";
 import constructMerkleTree from "sdk/merkle-tree/constructMerkleTree";
 import { ClaimantInfoForTest } from "tests/types/ClaimantInfoForTest";

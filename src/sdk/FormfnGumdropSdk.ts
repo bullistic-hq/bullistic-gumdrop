@@ -10,13 +10,13 @@ import {
   findAtaPda,
   getEditionNumber,
   ixsToTx,
-} from "@formfunction-hq/formfunction-program-shared";
-import createAtaIxIfNotExists from "@formfunction-hq/formfunction-program-shared/dist/instructions/createAtaIxIfNotExists";
+} from "@bullistic-hq/bullistic-program-shared";
+import createAtaIxIfNotExists from "@bullistic-hq/bullistic-program-shared/dist/instructions/createAtaIxIfNotExists";
 import { AnchorProvider, Idl, Program } from "@project-serum/anchor";
 import { MintLayout } from "@solana/spl-token";
 import { Connection, PublicKey, Transaction } from "@solana/web3.js";
-import { FORMFN_GUMDROP_IDL, GumdropProgram } from "sdk/idl";
-import { FormfnGumdrop } from "sdk/idl/FormfnGumdrop";
+import { BULLISTIC_GUMDROP_IDL, GumdropProgram } from "sdk/idl";
+import { BullisticGumdrop } from "sdk/idl/BullisticGumdrop";
 import claimEditionIx from "sdk/instructions/claimEditionIx";
 import closeDistributorAtaIx from "sdk/instructions/closeDistributorAtaIx";
 import closeDistributorIx from "sdk/instructions/closeDistributorIx";
@@ -29,10 +29,10 @@ import ClaimantInfo from "sdk/types/ClaimantInfo";
 import ClaimantWithProof from "sdk/types/ClaimantWithProof";
 import getProgramIdsFromEnvironment from "sdk/utils/getProgramIdsFromEnvironment";
 
-export default class FormfnGumdropSdk {
+export default class BullisticGumdropSdk {
   private _connection: Connection;
 
-  private _idl: Idl = FORMFN_GUMDROP_IDL;
+  private _idl: Idl = BULLISTIC_GUMDROP_IDL;
 
   private _program: GumdropProgram;
 
@@ -63,9 +63,9 @@ export default class FormfnGumdropSdk {
       preflightCommitment: "recent",
     });
 
-    this._program = new Program<FormfnGumdrop>(
+    this._program = new Program<BullisticGumdrop>(
       // Don't know why the types don't match.
-      FORMFN_GUMDROP_IDL as any,
+      BULLISTIC_GUMDROP_IDL as any,
       this._gumdropProgramId,
       provider
     );

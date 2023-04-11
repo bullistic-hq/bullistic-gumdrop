@@ -1,5 +1,5 @@
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
-import FormfnGumdropSdk from "sdk/FormfnGumdropSdk";
+import BullisticGumdropSdk from "sdk/BullisticGumdropSdk";
 import assertTokenOwnerHasAmount from "tests/helpers/assertTokenOwnerHasAmount";
 import closeDistributor from "tests/helpers/closeDistributor";
 import expectToThrow from "tests/utils/expectToThrow";
@@ -14,7 +14,7 @@ type Accounts = {
 
 type Args = {
   connection: Connection;
-  gumdropSdk: FormfnGumdropSdk;
+  gumdropSdk: BullisticGumdropSdk;
   shouldConfigAuthorityClose?: boolean;
 };
 

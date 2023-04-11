@@ -1,4 +1,4 @@
-import { serializeMerkleProof } from "@formfunction-hq/formfunction-program-shared";
+import { serializeMerkleProof } from "@bullistic-hq/bullistic-program-shared";
 import { PublicKey } from "@solana/web3.js";
 import constructMerkleTree from "sdk/merkle-tree/constructMerkleTree";
 import ClaimantInfo from "sdk/types/ClaimantInfo";

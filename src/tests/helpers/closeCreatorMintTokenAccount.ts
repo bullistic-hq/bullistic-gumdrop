@@ -1,7 +1,7 @@
 import {
   createCloseAtaIx,
   ixsToTx,
-} from "@formfunction-hq/formfunction-program-shared";
+} from "@bullistic-hq/bullistic-program-shared";
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
 import logIfNotProd from "sdk/utils/logIfNotProd";
 import sendTransactionForTest from "tests/utils/sendTransactionForTest";

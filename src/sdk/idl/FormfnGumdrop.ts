@@ -1,8 +1,8 @@
-export type FormfnGumdrop = {
+export type BullisticGumdrop = {
   accounts: [
     {
       docs: [
-        "Global Gumdrop program authority account. This is for Formfunction to",
+        "Global Gumdrop program authority account. This is for Bullistic to",
         "authorize certain program instructions."
       ];
       name: "gumdropConfig";
@@ -77,7 +77,7 @@ export type FormfnGumdrop = {
       };
     }
   ];
-  docs: ["The [formfn_gumdrop] program."];
+  docs: ["The [bullistic_gumdrop] program."];
   errors: [
     { code: 7000; msg: "Invalid Merkle proof."; name: "InvalidProof" },
     { code: 7001; msg: "Drop already claimed."; name: "DropAlreadyClaimed" },
@@ -317,7 +317,7 @@ export type FormfnGumdrop = {
         { isMut: false; isSigner: false; name: "systemProgram" }
       ];
       args: [{ name: "bump"; type: "u8" }];
-      docs: ["Set the global formfn_authority on the GumdropConfig account."];
+      docs: ["Set the global bullistic_authority on the GumdropConfig account."];
       name: "createGumdropConfig";
     },
     {
@@ -411,7 +411,7 @@ export type FormfnGumdrop = {
       ];
       args: [];
       docs: [
-        "Update the global formfn_authority on the GumdropConfig account."
+        "Update the global bullistic_authority on the GumdropConfig account."
       ];
       name: "updateGumdropConfig";
     }
@@ -488,14 +488,14 @@ export type FormfnGumdrop = {
       "payer"
     ];
   };
-  name: "formfn_gumdrop";
+  name: "bullistic_gumdrop";
   version: "0.0.1";
 };
-export const IDL: FormfnGumdrop = {
+export const IDL: BullisticGumdrop = {
   accounts: [
     {
       docs: [
-        "Global Gumdrop program authority account. This is for Formfunction to",
+        "Global Gumdrop program authority account. This is for Bullistic to",
         "authorize certain program instructions.",
       ],
       name: "gumdropConfig",
@@ -570,7 +570,7 @@ export const IDL: FormfnGumdrop = {
       },
     },
   ],
-  docs: ["The [formfn_gumdrop] program."],
+  docs: ["The [bullistic_gumdrop] program."],
   errors: [
     { code: 7000, msg: "Invalid Merkle proof.", name: "InvalidProof" },
     { code: 7001, msg: "Drop already claimed.", name: "DropAlreadyClaimed" },
@@ -810,7 +810,7 @@ export const IDL: FormfnGumdrop = {
         { isMut: false, isSigner: false, name: "systemProgram" },
       ],
       args: [{ name: "bump", type: "u8" }],
-      docs: ["Set the global formfn_authority on the GumdropConfig account."],
+      docs: ["Set the global bullistic_authority on the GumdropConfig account."],
       name: "createGumdropConfig",
     },
     {
@@ -904,7 +904,7 @@ export const IDL: FormfnGumdrop = {
       ],
       args: [],
       docs: [
-        "Update the global formfn_authority on the GumdropConfig account.",
+        "Update the global bullistic_authority on the GumdropConfig account.",
       ],
       name: "updateGumdropConfig",
     },
@@ -981,6 +981,6 @@ export const IDL: FormfnGumdrop = {
       "payer",
     ],
   },
-  name: "formfn_gumdrop",
+  name: "bullistic_gumdrop",
   version: "0.0.1",
 };

@@ -6,7 +6,7 @@ import getClaimantsListForTest from "tests/helpers/getClaimantsListForTest";
  * size. Large trees require larger proofs, which at some size are limited
  * by the transaction size the proof is submitted in.
  *
- * Note: See original investigation here: https://github.com/formfunction-hq/formfn-gumdrop/pull/95
+ * Note: See original investigation here: https://github.com/bullistic-hq/bullistic-gumdrop/pull/95
  *
  * Run this with: yarn estimate-merkle-proof-sizes
  *

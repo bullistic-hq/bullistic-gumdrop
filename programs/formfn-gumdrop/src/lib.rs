@@ -18,12 +18,12 @@ const GUMDROP_CONFIG_PREFIX: &str = "GumdropConfig";
 const CLAIM_COUNT_PREFIX: &str = "ClaimCount";
 const WALLET_PREFIX: &str = "Wallet";
 
-/// The [formfn_gumdrop] program.
+/// The [bullistic_gumdrop] program.
 #[program]
-pub mod formfn_gumdrop {
+pub mod bullistic_gumdrop {
     use super::*;
 
-    /// Set the global formfn_authority on the GumdropConfig account.
+    /// Set the global bullistic_authority on the GumdropConfig account.
     pub fn create_gumdrop_config(ctx: Context<CreateGumdropConfig>, bump: u8) -> Result<()> {
         let config_creator = &ctx.accounts.config_authority;
         let config_authority = &ctx.accounts.config_authority;
@@ -42,7 +42,7 @@ pub mod formfn_gumdrop {
         Ok(())
     }
 
-    /// Update the global formfn_authority on the GumdropConfig account.
+    /// Update the global bullistic_authority on the GumdropConfig account.
     pub fn update_gumdrop_config(ctx: Context<UpdateGumdropConfig>) -> Result<()> {
         let gumdrop_config = &mut ctx.accounts.gumdrop_config;
         let new_authority = &mut ctx.accounts.new_authority;
@@ -733,7 +733,7 @@ pub struct ClaimEdition<'info> {
     rent: Sysvar<'info, Rent>,
 }
 
-/// Global Gumdrop program authority account. This is for Formfunction to
+/// Global Gumdrop program authority account. This is for Bullistic to
 /// authorize certain program instructions.
 #[account]
 #[derive(Default)]
