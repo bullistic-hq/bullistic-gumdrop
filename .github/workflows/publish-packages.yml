@@ -1,0 +1,28 @@
+name: Publish Packages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Configure .npmrc
+        run: |
+          echo "@bullistic-hq:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.PACKAGE_PUBLISH_TOKEN }}" >> .npmrc
+      - run: yarn install
+      - run: yarn run build
+      - run: |
+          git config --global user.email "bullisticxyz@gmail.com"
+          git config --global user.name "Bullistic"
+      - run: yarn publish --yes
