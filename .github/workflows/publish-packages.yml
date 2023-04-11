@@ -28,7 +28,7 @@ jobs:
         with:
           path: ${{ env.CARGO_CACHE_PATH }}
           key: cargo-${{ runner.os }}-debug-anchor-${{ hashFiles('**/Cargo.lock') }}
-      - run: cargo install --path cli anchor-cli --locked --force --debug
+      - run: cargo install --path programs/bullistic-gumdrop --locked --force --debug
       - run: chmod +x ~/.cargo/bin/anchor
       - uses: actions/upload-artifact@v3
         with:
