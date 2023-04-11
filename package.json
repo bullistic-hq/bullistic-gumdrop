@@ -1,6 +1,6 @@
 {
   "name": "@bullistic-hq/bullistic-gumdrop",
-  "version": "0.0.51",
+  "version": "0.0.52",
   "description": "TypeScript SDK for interacting with Bullistic's gumdrop program for pNFT distribution.",
   "repository": "https://github.com/bullistic-hq/bullistic-gumdrop",
   "license": "UNLICENSED",
